@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My First Website</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #edf3ff;
+      text-align: center;
+      padding: 50px 15px;
+    }
+    .card {
+      background: white;
+      padding: 30px 20px;
+      border-radius: 16px;
+      max-width: 400px;
+      margin: auto;
+      box-shadow: 0 8px 24px rgba(25, 50, 100, 0.08);
+    }
+    button {
+      background: #2457d6;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    #msg {
+      color: #2457d6;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <main class="card">
+    <h1>Welcome!</h1>
+    <p>I built this website using my Android phone.</p>
+    <button onclick="document.getElementById('msg').textContent='My website is working!'">
+      Click Me
+    </button>
+    <p id="msg" aria-live="polite"></p>
+  </main>
+</body>
+</html>
